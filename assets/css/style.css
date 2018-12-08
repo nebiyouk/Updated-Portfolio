@@ -124,7 +124,7 @@ h3 {
 
 #logo {
   float: left;
-  width: 250px;
+  /* width: 250px; */
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -160,6 +160,7 @@ nav a:first-child {
   color         : var(--color-top-pane);
   letter-spacing: 0.005em;
   text-align    : center;
+  margin-top: -1px;
 }
 
 #copyright a {
@@ -211,6 +212,14 @@ h3,
   margin-right: 0;
 }
 /* All things related to the left panes  */
+#date-time {
+  color: white;
+  font-weight: bolder;
+  font-size: 15px
+}
+.paragraph {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .left_pane {
   background-color: var(--color-top-pane);
   box-shadow      : 0 4px  8px  6px rgba(0, 0, 0, 0.12),
@@ -248,7 +257,7 @@ h3,
 }
 .p1 {
   color: rgb(55, 71, 212);
-  text-align: left;
+  text-align: center;
   font-size: 15px
 }
 /* Main page button */
@@ -261,7 +270,7 @@ h3,
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color: rgba(220, 0, 0, 1);
+  background-color: #4aaaa5;
   background-image: linear-gradient(to top left,
                                     rgba(0, 0, 0, .2),
                                     rgba(0, 0, 0, .2) 30%,
@@ -271,9 +280,8 @@ h3,
 }
 
 .styled:hover {
-  background-color: rgba(255, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 1); 
 }
-
 .styled:active {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
               inset 2px 2px 3px rgba(0, 0, 0, .6);

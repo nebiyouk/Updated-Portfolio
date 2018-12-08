@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>About | Nebiyou Kebede</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
-
-<body>
+    <!-- moment js -->
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"> </script>
 
     <header id="masthead">
         <div class="container">
-            <a href="index.html" id="logo">Nebiyou Kebede</a>
+            <a href="index.html" id="logo"><span id="date-time"></span></a>
             <nav id="website_menu">
                 <a href="index.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
@@ -23,20 +25,24 @@
     <div class="wrapper">
         <div id="main-container" class="container">
             <section class="main-section left_pane">
-                <h1>About Me</h1>
-
+                <!-- date & Time Display -->
+                <span id="date-time"></span>
+                <!-- <h1>About Me</h1> -->
                 <img src="assets/images/NebiyouKebede.jpg" class="auth-image" alt="Nebiyou Kebede">
 
-                <p>Wellcome to my page Pleased to meet you.</p>
-                <p>My name is <strong style=color:brown; class="indexname">Nebiyou Kebede</strong>, and I am a
-                    full-stack developer
-                    I Moved to the United States in search of a better opportunity, better life and to pursue my dream
-                    of learning. </p>
-                <p>And now I'm excited about learning code! At this moment, I am just starting my journey,
-                    but I hope to be able to show off my skills in no time. And thanks to Upenn Coding Bootcamp for
-                    giving me this chance</p>
-                <button class="styled" type="submit" onclick="window.open('assets/images/resume_Nebiyou.pdf')">My
-                    Resume</button>
+                <p> <strong style=color:brown; class="indexname"><span id="greeting"></span></strong> </p>
+                <p class="paragraph">My name is <strong style=color:green; class="indexname">Nebiyou Kebede</strong>,
+                    and I am a
+                    full-stack developer with a background in Computer Hardware.
+                    I am currently enrolled at the UPenn Coding BootCamp, which will conclude around January 2019.
+                    Becoming a Full stuck developer has been a very exciting and interesting process. I absolutely love
+                    what I
+                    do and cannot wait to apply my knowledge to solve real-life problems. I am professional,
+                    hard-working and passionate about this new career, and I strive to create beautiful and useful
+                    applications. <br>
+                    <button class="styled" type="submit" onclick="window.open('assets/images/Resume.pdf')">Resume</button>
+
+                </p>
             </section>
             <section class="sidebar right_pane">
                 <div id="connect">
@@ -46,7 +52,7 @@
                     <a href="https://github.com/nebiyouk" target="_blank"><img src="assets/images/Github.ico" alt="link to Nebi's GitHub page"
                             width="70" height="70"></a>
                     <strong>
-                        <p class="p1">contactnebey@yahoo.com</p>
+                        <p class="p1"> <a href="mailto:contactnebey@yahoo.com"><i class="fas fa-envelope fa-3x"></i></a></p>
                     </strong>
                 </div>
             </section>
@@ -61,6 +67,7 @@
                     Kebede</a>, all rights reserved.</p>
         </div>
     </footer>
-</body>
+    <script src="add-content.js"></script>
+    </body>
 
 </html>
